@@ -1,0 +1,62 @@
+div{
+
+
+width: 100px;
+height: 100px;
+background-color: red;
+
+
+animation-name: square;
+animation-delay: 0.5s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: linear;
+animation-duration: 2s;
+
+}
+@keyframes square{
+   
+     0%{
+        translate: 0 0;
+        background: aqua;
+        rotate: 0;
+    }
+    25%{
+       translate: 0 500px;
+       background: aqua;
+       rotate: 0;
+   }
+   50%{
+      translate: 400px 500px;
+      background: #09ff00;
+      rotate: 180deg;
+   }
+     75%{
+        translate: 400px 0;
+        background: blue;
+        rotate: 270deg;
+    }
+    100%{
+       translate: 0 0;
+       background: darkgray;
+       rotate: 360deg;
+   }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+div:hover{
+ animation-play-state: paused;
+ cursor: grab;
+
+}
